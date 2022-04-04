@@ -15,9 +15,6 @@ function NavBar() {
         <Link to="/#" className="navbar-item">
           Home
         </Link>
-        <Link to="/#live" className="navbar-item">
-          Live
-        </Link>
         <Link to="/#ladder" className="navbar-item">
           Drabinka
         </Link>
