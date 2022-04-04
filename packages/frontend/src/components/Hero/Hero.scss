@@ -1,0 +1,23 @@
+.logo {
+  position: relative;
+  width: 300px;
+  left: 0;
+}
+
+.uc-text {
+  position: relative;
+  z-index: 1;
+  right: 10%;
+}
+
+@media (min-width: 30em) and (orientation: landscape) {
+  .logo {
+    position: relative;
+    left: 0;
+  }
+
+  .uc-text {
+    position: relative;
+    left: 0;
+  }
+}
