@@ -1,0 +1,64 @@
+.Hero {
+  // background-image: url("../../../public/papyrus.png");
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background: linear-gradient(-45deg, white 0%, #00599f 10%),
+  //   url("../../../public/papyrus.png");
+  // background-blend-mode: overlay;
+  background-color: #f1e9f1;
+}
+
+.left-wave {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  line-height: 0;
+  filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.4));
+}
+.right-wave {
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 0;
+  filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.4));
+}
+
+.logo {
+  display: none;
+  filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.4));
+}
+
+.uc-text {
+  display: none;
+  filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.4));
+}
+
+.mobileLogo {
+  display: block;
+  width: 80%;
+}
+
+@media (min-width: 30em) and (orientation: landscape) {
+  .logo {
+    display: block;
+    position: relative;
+    left: 5rem;
+    width: 40rem;
+    top: -7rem;
+  }
+
+  .uc-text {
+    display: block;
+    position: relative;
+    right: 5rem;
+    top: 2rem;
+    width: 60rem;
+  }
+  .uc-text > img {
+    width: 100%;
+  }
+
+  .mobileLogo {
+    display: none;
+  }
+}
