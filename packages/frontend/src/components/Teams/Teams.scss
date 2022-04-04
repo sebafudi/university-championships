@@ -1,0 +1,70 @@
+
+.team-member{
+	display: flex;
+	align-items: center;
+	margin-bottom: .5em;
+}
+
+.members{
+	margin-left: 1em;
+}
+
+.member-pfp {
+	width: 2em;
+	margin-right: .5em;
+}
+
+#teams {
+	padding-top: 3em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-around;
+	height: auto;
+	min-height: 100vh;
+}
+
+.team{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 33%;
+	margin-bottom: 3em;
+	padding: 2em;
+}
+
+
+@media only screen and (min-width: 1300px) {
+  body {
+    .team{
+			width: 25%;
+		}
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    .team{
+			width: 50%;
+		}
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    .team{
+			width: 35rem;
+		}
+  }
+}
+.team-logo{
+	float: left;
+	height: 7em;
+	width: 7em;
+}
+
+.team-name {
+	font-size: 1.2em;
+	margin-bottom: 0.4em;
+}
