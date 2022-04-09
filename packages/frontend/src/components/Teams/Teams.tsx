@@ -7,7 +7,7 @@ function Teams() {
   const teams = useContext(teamsContext);
 
   return (
-    <div id="teams" className="fullscreen Teams">
+    <div id="teams" className="Teams">
       {/* <h1>Drużyny</h1> */}
       {Object.keys(teams).map((key) => {
         let { name, logo, members } = teams[key];

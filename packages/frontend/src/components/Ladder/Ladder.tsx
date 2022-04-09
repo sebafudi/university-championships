@@ -2,7 +2,7 @@ import { Bracket, RoundProps } from "react-brackets";
 
 function Ladder({ rounds }: { rounds: RoundProps[] }) {
   return (
-    <div id="ladder" className="fullscreen Ladder">
+    <div className="Ladder center-content max-screen">
       <Bracket rounds={rounds} />
     </div>
   );

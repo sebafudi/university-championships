@@ -1,7 +1,9 @@
+/* eslint-disable import/no-anonymous-default-export */
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 
 import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero/Hero";
+import Live from "./components/Live/Live";
 import Register from "./components/Register/Register";
 import Ladder from "./components/Ladder/Ladder";
 import Teams from "./components/Teams/Teams";
@@ -89,12 +91,29 @@ function App() {
         <Route
           path="/"
           element={[
-            <Hero key="hero" />,
-            <Ladder key="ladder" rounds={rounds} />,
-            <Teams key="teams" />,
+            <div id="hero" className="fullscreen page">
+              <Hero key="hero" />
+            </div>,
+            <div id="live" className="half page">
+              <div className="spacer">
+                <div className="spacer-top-purple"></div>
+              </div>
+              <Live key="live" />
+              <div className="spacer">
+                <div className="spacer-bottom-purple"></div>
+              </div>
+            </div>,
+            <div id="ladder" className="fullscreen page bg-concrete">
+              <Ladder key="ladder" rounds={rounds} />
+            </div>,
+            <div id="teams" className="fullscreen page">
+              <div className="spacer">
+                <div className="spacer-top-purple"></div>
+              </div>
+              <Teams key="teams" />
+            </div>,
           ]}
         />
-        <Route path="register" element={<Register key="register" />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

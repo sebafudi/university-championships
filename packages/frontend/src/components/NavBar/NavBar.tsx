@@ -11,9 +11,13 @@ function NavBar() {
       role="navigation"
       aria-label="main navigation"
     >
+      <div className="navbar-bg"></div>
       <div id="navbarBasicExample" className="navbar-brand">
         <Link to="/#" className="navbar-item">
           Home
+        </Link>
+        <Link to="/#live" className="navbar-item">
+          Live
         </Link>
         <Link to="/#ladder" className="navbar-item">
           Drabinka

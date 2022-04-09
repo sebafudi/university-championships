@@ -1,64 +1,47 @@
-.Hero {
-  // background-image: url("../../../public/papyrus.png");
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background: linear-gradient(-45deg, white 0%, #00599f 10%),
-  //   url("../../../public/papyrus.png");
-  // background-blend-mode: overlay;
-  background-color: #f1e9f1;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../public/mockaroon-YqUeLG7fMr4-unsplash.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.left-wave {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  line-height: 0;
-  filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.4));
-}
-.right-wave {
-  position: absolute;
-  right: 0;
-  top: 0;
-  line-height: 0;
-  filter: drop-shadow(0px 0px 15px rgb(0 0 0 / 0.4));
-}
-
-.logo {
-  display: none;
-  filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.4));
+.hero > .hero-image {
+  position: relative;
+  width: 70%;
+  top: -7%;
+  margin: auto;
+  height: 100%;
+  z-index: 1;
+  background-image: url("../../../public/svgLOGOUCPOZIOM.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  // filter: drop-shadow(3px 3px 3px #1c146599);
+  animation: heroAnimation 3s alternate infinite ease-in-out;
 }
 
-.uc-text {
-  display: none;
-  filter: drop-shadow(3px 3px 5px rgb(0 0 0 / 0.4));
-}
-
-.mobileLogo {
-  display: block;
-  width: 80%;
-}
-
-@media (min-width: 30em) and (orientation: landscape) {
-  .logo {
-    display: block;
-    position: relative;
-    left: 5rem;
-    width: 40rem;
-    top: -7rem;
+@keyframes heroAnimation {
+  from {
+    filter: drop-shadow(3px 3px 3px #1c146544) hue-rotate(30deg);
+    transform: scale(1.04);
   }
 
-  .uc-text {
-    display: block;
-    position: relative;
-    right: 5rem;
-    top: 2rem;
-    width: 60rem;
+  to {
+    filter: drop-shadow(3px 3px 3px #1c146566);
+    transform: scale(1);
   }
-  .uc-text > img {
+}
+
+@media screen and (orientation: portrait) {
+  // @media screen and (max-width: 820px) {
+  .hero > .hero-image {
+    position: relative;
     width: 100%;
-  }
-
-  .mobileLogo {
-    display: none;
+    top: 0;
+    background-image: url("../../../public/svgLogoUCPION.svg");
   }
 }

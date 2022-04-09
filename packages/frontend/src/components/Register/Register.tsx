@@ -1,6 +1,6 @@
 function Register() {
   return (
-    <div id="register" className="fullscreen Register">
+    <div id="register" className="Register">
       register form
     </div>
   );
