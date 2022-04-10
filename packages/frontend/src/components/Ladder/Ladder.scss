@@ -1,11 +1,17 @@
-.ladder-container {
-}
-
 .Ladder {
   padding: 150px 0;
   // padding: 5rem;
+  margin: auto;
+  width: min-content;
 }
 
 .Ladder * {
   color: white !important;
+}
+
+@media screen and (max-width: 992px) {
+  .Ladder {
+    margin: inherit;
+    width: inherit;
+  }
 }

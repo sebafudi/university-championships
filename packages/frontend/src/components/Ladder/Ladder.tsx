@@ -4,7 +4,7 @@ import "./Ladder.scss";
 
 function Ladder({ rounds }: { rounds: RoundProps[] }) {
   return (
-    <div className="Ladder max-screen">
+    <div className="Ladder">
       <Bracket rounds={rounds} />
     </div>
   );

@@ -49,7 +49,7 @@ function Live() {
       );
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [then]);
 
   return (
     <div className="Live max-screen">
