@@ -1,70 +1,75 @@
-
-.team-member{
-	display: flex;
-	align-items: center;
-	margin-bottom: .5em;
+.team-member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
-.members{
-	margin-left: 1em;
+.team-member:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.members {
+  margin-left: 1em;
 }
 
 .member-pfp {
-	width: 2em;
-	margin-right: .5em;
+  width: 2em;
+  margin-right: 0.5em;
 }
 
 #teams {
-	padding-top: 3em;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: space-around;
-	height: auto;
-	min-height: 100vh;
+  padding-top: 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+  height: auto;
+  min-height: 100vh;
 }
 
-.team{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	width: 33%;
-	margin-bottom: 3em;
-	padding: 2em;
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 33%;
+  margin-bottom: 3em;
+  padding: 2em;
+  color: white;
 }
-
 
 @media only screen and (min-width: 1300px) {
   body {
-    .team{
-			width: 25%;
-		}
+    .team {
+      width: 25%;
+    }
   }
 }
 
 @media only screen and (max-width: 950px) {
   body {
-    .team{
-			width: 50%;
-		}
+    .team {
+      width: 50%;
+    }
   }
 }
 
 @media only screen and (max-width: 600px) {
   body {
-    .team{
-			width: 35rem;
-		}
+    .team {
+      width: 35rem;
+    }
   }
 }
-.team-logo{
-	float: left;
-	height: 7em;
-	width: 7em;
+.team-logo {
+  float: left;
+  height: 7em;
+  width: 7em;
 }
 
 .team-name {
-	font-size: 1.2em;
-	margin-bottom: 0.4em;
+  font-size: 1.2em;
+  margin-bottom: 0.4em;
 }

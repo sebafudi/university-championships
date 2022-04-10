@@ -9,17 +9,17 @@ function Teams() {
   return (
     <div id="teams" className="Teams">
       {/* <h1>Drużyny</h1> */}
-      {Object.keys(teams).map((key) => {
-        let { name, logo, members } = teams[key];
+      {teams.map((team) => {
+        let { name, logo, members } = team;
 
         return (
           <div className="team">
-            <img className="team-logo" src={logo} alt={key} />
+            <div className="team-bg"></div>
+            <img className="team-logo" src={logo} alt={name} />
             <div className="members">
-              <div className="team-name">{key}</div>
-              {members.map(({ nick, pfp }) => (
+              <div className="team-name">{name}</div>
+              {members.map(({ nick }) => (
                 <div className="team-member">
-                  <img className="member-pfp" src={pfp} alt={nick} />
                   <div className="member-nick">{nick}</div>
                 </div>
               ))}

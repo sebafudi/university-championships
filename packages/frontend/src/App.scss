@@ -26,6 +26,10 @@
   height: 0;
 }
 
+.bg-color {
+  background-color: #754686;
+}
+
 .spacer-top-purple {
   aspect-ratio: 960/250;
   position: absolute;
@@ -61,6 +65,10 @@
   .spacer-top-purple {
     aspect-ratio: 960/350;
     transform: translateY(1px);
+  }
+  .spacer-bottom-purple {
+    aspect-ratio: 960/350;
+    transform: translateY(-1px);
   }
 }
 
