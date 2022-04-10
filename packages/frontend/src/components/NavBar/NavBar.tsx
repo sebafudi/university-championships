@@ -25,8 +25,8 @@ function NavBar() {
         <Link to="/#teams" className="navbar-item">
           Drużyny
         </Link>
-        <Link to="/register" className="navbar-item">
-          Zapisy
+        <Link to="/admin" className="navbar-item">
+          Admin
         </Link>
       </div>
     </nav>

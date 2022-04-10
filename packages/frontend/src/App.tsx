@@ -4,7 +4,6 @@ import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Hero from "./components/Hero/Hero";
 import Live from "./components/Live/Live";
-import Register from "./components/Register/Register";
 import Ladder from "./components/Ladder/Ladder";
 import Teams from "./components/Teams/Teams";
 
@@ -12,6 +11,8 @@ import teamsContext from "./contexts/teams.ctx";
 import "./App.scss";
 
 import faker from "@faker-js/faker";
+import React from "react";
+const Admin = React.lazy(() => import("./components/Admin/Admin"));
 
 type member = {
   nick: string;
@@ -126,13 +127,14 @@ function App() {
               <Ladder key="ladder" rounds={rounds} />
             </div>,
             <div id="teams" className="fullscreen page">
-              {/* <div className="spacer">
+              <div className="spacer">
                 <div className="spacer-top-purple"></div>
-              </div> */}
+              </div>
               <Teams key="teams" />
             </div>,
           ]}
         />
+        <Route path="/admin" element={[<Admin key="admin" />]} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </div>
