@@ -1,0 +1,47 @@
+.Live,
+.Live > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-text {
+  color: white;
+  font-weight: bold;
+  font-size: 5em;
+  user-select: none;
+}
+
+.live-timer {
+  color: white;
+  font-weight: bold;
+  font-size: 6em;
+  user-select: none;
+}
+
+.live-image {
+  background-color: red;
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  margin: 2em;
+  // animation: live_blink 1.5s infinite alternate ease-in-out;
+  animation: live_blink 2.5s steps(2, start) infinite;
+}
+
+@keyframes live_blink {
+  from {
+    // opacity: 0;
+  }
+  to {
+    // opacity: 1;
+    visibility: hidden;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  .Live {
+    font-size: 0.3rem;
+  }
+}
